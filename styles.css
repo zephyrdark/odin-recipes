@@ -15,21 +15,27 @@ img {
     border: black solid 2px;
 }
 
-.container {
-    margin:auto;
-    justify-content: center;
-    max-width: max-content;
+ol {
+    margin-top: 0;
+    margin-left:-2.5em;
 }
 
 .container .profile-picture {
-    max-width: 240px;
+    max-width: 300px;
 }
 
 .menu-items {
-    max-width: fit-content;
+    /* max-width: fit-content; */
+    list-style-position: inside;
+    text-align: center;
+    max-height: 200px;
+    padding: 0px;
     display: block;
-    margin-left: auto;
-    margin-right: auto;
+}
+
+.menu-items,.img {
+    width: 300px;
+    margin:0 auto;
 }
 
 .title {
