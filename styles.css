@@ -2,13 +2,12 @@
     background-color:#fffaee;
     font-family: Arial, Helvetica, sans-serif;
     box-sizing: border-box;
-    /* border: red solid 1px;  */
+    /* border: red dashed 1px;  */
 }
 
 img {
     max-width: 100%;
     max-height: 600px;
-    justify-content: center;
     margin-left: auto;
     margin-right: auto;
     display: block;
@@ -21,21 +20,8 @@ ol {
 }
 
 .container .profile-picture {
-    max-width: 300px;
-}
-
-.menu-items {
-    /* max-width: fit-content; */
-    list-style-position: inside;
-    text-align: center;
-    max-height: 200px;
-    padding: 0px;
-    display: block;
-}
-
-.menu-items,.img {
-    width: 300px;
-    margin:0 auto;
+    max-width: 200px;
+    margin: 0 auto;
 }
 
 .title {
@@ -43,12 +29,43 @@ ol {
     text-decoration: underline;
 }
 
+/* Home Page Menu Items */
+.home-menu ol{
+    display: block;
+    margin-left: -2.5em;
+    text-align: center;
+}
+
+.home-menu li {
+    display:inline-block;
+    text-align: center;
+    margin: 0 2em;
+    padding-bottom: 1em;
+}
+
+.home-menu img {
+    display:inline-block;
+    width: 20em;
+    height: 15em;
+    object-fit: cover;
+}
+
+/* Navigation Buttons */
 .navi {
     display: block;
     text-align: center;
     text-decoration-color: white;
     margin-left: auto;
     margin-right: auto;
+}
+
+.navi.socials {
+    font-size: 1em;
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    padding:0 auto;
+    font-weight: bold;
 }
 
 .navi > a {
