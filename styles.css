@@ -85,3 +85,37 @@ ol {
     margin-left: 1px;
     /* to create a "button clicked" effect */
 }
+
+.ingredients-container {
+    /* border: 1px solid blue; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding: 0;
+}
+
+.ingredients-container > ul {
+    list-style-type: none;
+}
+
+.ingredients-group {
+    flex-shrink: 1;
+    flex-grow: 1;
+    flex-basis: max-content;
+    /* border: 1px dashed green; */
+    display: block;
+    margin:10px;
+    /* height: max-content; */
+}
+
+.ingredients-group > * {
+    padding: 0 1em;
+}
+
+.ingredients-header {
+    /* border: 1px dashed red; */
+    display: flex;
+    flex-direction: column;
+    flex-basis: fit-content;
+}
