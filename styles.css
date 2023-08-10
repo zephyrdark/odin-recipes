@@ -1,8 +1,11 @@
+/* background-color: colorhexa.com/40b0a6 */
+
 * {
-    background-color:#fffaee;
+    background-color:#40B0A6;
+    color: #112F2C;
+    /* border: red dashed 1px;  */
     font-family: Arial, Helvetica, sans-serif;
     box-sizing: border-box;
-    /* border: red dashed 1px;  */
 }
 
 img {
@@ -12,6 +15,7 @@ img {
     margin-right: auto;
     display: block;
     border: black solid 2px;
+    filter:brightness(95%);
 }
 
 ol {
@@ -19,17 +23,32 @@ ol {
     margin-left:-2.5em;
 }
 
-.container .profile-picture {
-    max-width: 200px;
+/* Profile Picture - Vanity reasons */
+.profile-picture {
+    display: block;
+    margin: 1em auto;
+}
+
+.profile-picture > img {
+    display: block;
+    max-height: 12em;
+    max-width: 12em;
     margin: 0 auto;
 }
 
-.title {
+/* Hero Banner - For catchy 'call to action' */
+.hero-banner > *,em {
+    padding: 1em 0;
     text-align: center;
-    text-decoration: underline;
+    background-color: #ecead4;
+    margin: 0;
 }
 
 /* Home Page Menu Items */
+.title {
+    text-align: center;
+}
+
 .home-menu ol{
     display: block;
     margin-left: -2.5em;
@@ -63,9 +82,9 @@ ol {
     font-size: 1em;
     background-color: black;
     color: white;
-    text-decoration: none;
-    padding:0 auto;
+    text-decoration: underline;
     font-weight: bold;
+    max-width: 12em;
 }
 
 .navi > a {
